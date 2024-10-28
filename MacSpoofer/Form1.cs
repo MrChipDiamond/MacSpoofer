@@ -16,19 +16,19 @@ namespace MacSpoofer
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            // Placeholder for additional functionality if needed
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Display current MAC address
+           
             string macAddress = GetMacAddress();
             textBox1.Text = macAddress;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Spoof the MAC address
+            
             string newMacAddress = GenerateRandomMacAddress();
             if (SpoofMacAddress(newMacAddress))
             {
@@ -58,7 +58,7 @@ namespace MacSpoofer
             Random rand = new Random();
             byte[] macAddr = new byte[6];
             rand.NextBytes(macAddr);
-            macAddr[0] = (byte)(macAddr[0] & (byte)254); // unicast and locally administered
+            macAddr[0] = (byte)(macAddr[0] & (byte)254); 
 
             return string.Join(":", macAddr.Select(b => b.ToString("X2")));
         }
@@ -69,7 +69,7 @@ namespace MacSpoofer
             {
                 ProcessStartInfo psi = new ProcessStartInfo("netsh", $"interface set interface \"Ethernet\" mac={newMacAddress.Replace(":", "")}");
                 psi.WindowStyle = ProcessWindowStyle.Hidden;
-                psi.Verb = "runas"; // Run as administrator
+                psi.Verb = "runas";
                 Process.Start(psi)?.WaitForExit();
                 return true;
             }
@@ -83,13 +83,18 @@ namespace MacSpoofer
         {
             ProcessStartInfo psi = new ProcessStartInfo("netsh", $"interface set interface \"{adapter.Name}\" admin=disable");
             psi.WindowStyle = ProcessWindowStyle.Hidden;
-            psi.Verb = "runas"; // Requires admin privileges
+            psi.Verb = "runas";
             Process.Start(psi)?.WaitForExit();
 
             psi = new ProcessStartInfo("netsh", $"interface set interface \"{adapter.Name}\" admin=enable");
             psi.WindowStyle = ProcessWindowStyle.Hidden;
             psi.Verb = "runas";
             Process.Start(psi)?.WaitForExit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
