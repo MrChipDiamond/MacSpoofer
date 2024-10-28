@@ -1,0 +1,10 @@
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\bin\Debug\MacSpoofer.exe.config
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\bin\Debug\MacSpoofer.exe
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\bin\Debug\MacSpoofer.pdb
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\obj\Debug\MacSpoofer.csproj.AssemblyReference.cache
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\obj\Debug\MacSpoofer.Form1.resources
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\obj\Debug\MacSpoofer.Properties.Resources.resources
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\obj\Debug\MacSpoofer.csproj.GenerateResource.cache
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\obj\Debug\MacSpoofer.csproj.CoreCompileInputs.cache
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\obj\Debug\MacSpoofer.exe
+C:\Users\Nexus\source\repos\MacSpoofer\MacSpoofer\obj\Debug\MacSpoofer.pdb
